@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    username: weather_user
+    url: jdbc:postgresql://localhost:5432/weather
+    password: weather
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      show-sql: true
+      ddl-auto: update
+server:
+  port: 8081
+  servlet:
+    context-path: /weather-service
+  error:
+    include-stacktrace: never
+    
+open:
+  weather:
+    api:
+      key: f17164faf6218ea499b69c1a87cf3efa
+      pincodeLocation:
+        url: https://api.openweathermap.org/geo/1.0/zip?zip=
+      url: https://api.openweathermap.org/data/2.5/weather?lat=       
+    
+  
