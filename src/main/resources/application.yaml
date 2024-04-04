@@ -20,7 +20,7 @@ server:
 open:
   weather:
     api:
-      key: f17164faf6218ea499b69c1a87cf3efa
+      key: use your API_key
       pincodeLocation:
         url: https://api.openweathermap.org/geo/1.0/zip?zip=
       url: https://api.openweathermap.org/data/2.5/weather?lat=       
